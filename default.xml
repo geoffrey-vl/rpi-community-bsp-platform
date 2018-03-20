@@ -5,15 +5,13 @@
 
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
-  <remote fetch="https://github.com/meta-qt5/meta-qt5" name="qt5"/>
-  <remote fetch="git://git.yoctoproject.org/meta-security" name="secure"/>
-  <remote fetch="git://git.yoctoproject.org/meta-raspberrypi" name="raspberry"/>
-  <remote fetch="git://github.com/jumpnow/meta-rpi" name="jumpnow"/>
+  <remote fetch="https://github.com/meta-qt5" name="qt5"/>
+  <remote fetch="git://github.com/jumpnow" name="jumpnow"/>
 
   <project remote="yocto" revision="morty" name="poky" path="sources/poky"/>
   <project remote="oe" revision="morty" name="meta-openembedded" path="sources/meta-openembedded"/>
   <project remote="qt5" revision="morty" name="meta-qt5" path="sources/meta-qt5"/>
-  <project remote="secure" revision="morty" name="meta-security" path="sources/meta-security"/>
-  <project remote="raspberry" revision="morty" name="meta-raspberrypi" path="sources/meta-raspberrypi"/>
+  <project remote="yocto" revision="morty" name="meta-security" path="sources/meta-security"/>
+  <project remote="yocto" revision="morty" name="meta-raspberrypi" path="sources/meta-raspberrypi"/>
   <project remote="jumpnow" revision="morty" name="meta-rpi" path="sources/meta-rpi"/>
 </manifest>
