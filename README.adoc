@@ -15,7 +15,7 @@ Download the BSP source:
 $: PATH=${PATH}:~/bin
 $: mkdir rpi-community-bsp
 $: cd rpi-community-bsp
-$: repo init -u https://github.com/geoffrey-vl/rpi-community-bsp-platform -b morty
+$: repo init -u https://github.com/geoffrey-vl/rpi-community-bsp-platform -b rocko
 $: repo sync
 
 At the end of the commands you have every metadata you need to start work with.
