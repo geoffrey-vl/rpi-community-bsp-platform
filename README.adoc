@@ -20,11 +20,7 @@ $: repo sync
 
 At the end of the commands you have every metadata you need to start work with.
 
-To start a simple image build:
-
-[source,console]
-$: source ./setup-environment build
-$: bitbake core-image-minimal
+To start a simple image build look for the documentation at http://www.jumpnowtek.com/rpi/Raspberry-Pi-Systems-with-Yocto.html
 
 You can use any directory to host your build.
 
