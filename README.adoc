@@ -8,20 +8,45 @@ Install the `repo` utility:
 $: mkdir ~/bin
 $: curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 $: chmod a+x ~/bin/repo
+$: PATH=${PATH}:~/bin
 
 Download the BSP source:
 
 [source,console]
-$: PATH=${PATH}:~/bin
 $: mkdir rpi-community-bsp
 $: cd rpi-community-bsp
 $: repo init -u https://github.com/geoffrey-vl/rpi-community-bsp-platform -b rocko
 $: repo sync
 
 At the end of the commands you have every metadata you need to start work with.
-
-To start a simple image build look for the documentation at http://www.jumpnowtek.com/rpi/Raspberry-Pi-Systems-with-Yocto.html
-
-You can use any directory to host your build.
-
 The source code is checked out at `rpi-community-bsp/sources`.
+You can use any directory to host your build.
+As a personal favor I'm using `rpi-community-bsp/build` as build folder.
+
+To configure the build:
+
+[source,console]
+$: .repo/manifests/setup
+
+Afterwards you may want to edit the build/conf/local.conf to set the correct machine.
+
+To start a simple image build:
+
+[source,console]
+$: source sources/poky/oe-init-build-env build
+$: bitbake console-image
+
+Other images:
+
+* ap-image
+* audio-image
+* console-basic-image
+* console-image
+* flask-image
+* gumsense-image
+* iot-image
+* pyqt5-image
+* qt5-basic-image
+* qt5-image
+
+More documentation at http://www.jumpnowtek.com/rpi/Raspberry-Pi-Systems-with-Yocto.html
